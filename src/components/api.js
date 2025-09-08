@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:4001" });
-// const API = axios.create({ baseURL: "https://task1-1-fc4k.onrender.com" });
+// const API = axios.create({ baseURL: "http://localhost:4001" });
+const API = axios.create({ baseURL: "https://task1-1-fc4k.onrender.com" });
 
 // Attach JWT token automatically
 API.interceptors.request.use((req) => {
