@@ -42,6 +42,12 @@ export default function Navbar({ user, setUser, cartCount }) {
             >
               Products
             </Link>
+            <Link
+              to="/add-product"
+              className="font-medium text-gray-700 transition hover:text-blue-600 hover:scale-105"
+            >
+              Add Product
+            </Link>
 
             <Link
               to="/cart"

@@ -5,6 +5,7 @@ import Signup from "./pages/Signup";
 import Products from "./pages/Product";
 import Cart from "./pages/Cart";
 import Navbar from "./components/Navbar";
+import AddProduct from "./pages/AddProdet";
 
 export default function App() {
   const [user, setUser] = useState(
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/login" element={<Login setUser={setUser} />} />
           <Route path="/signup" element={<Signup setUser={setUser} />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/add-product" element={<AddProduct />} />
         </Routes>
       </div>
     </div>

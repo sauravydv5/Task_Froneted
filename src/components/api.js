@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const API = axios.create({ baseURL: "http://localhost:4001" });
-const API = axios.create({ baseURL: "https://task1-3oae.onrender.com" });
+const API = axios.create({ baseURL: "http://localhost:4001" });
+// const API = axios.create({ baseURL: "https://task1-1-fc4k.onrender.com" });
 
 // Attach JWT token automatically
 API.interceptors.request.use((req) => {
@@ -23,5 +23,6 @@ export const removeFromCart = (itemId) => API.delete(`/cart/remove/${itemId}`);
 export const updateCart = (data) => API.patch("/cart/update", data);
 export const clearCart = () => API.delete("/cart/clear");
 export const getCart = () => API.get("/cart");
+export const addItem = (data) => API.post("/items", data);
 
 export default API;
